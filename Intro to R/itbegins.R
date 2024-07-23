@@ -25,7 +25,7 @@ install.packages("tidyverse")
 require(tidyverse) 
 
 # set working directory
-setwd("C:/Users/ADMIN/Desktop/Intro to R")
+setwd("C:/Users/ADMIN/CEMA INTERNSHIP/MALARIA CLASSIFICATION MODEL - CEMA/CEMA-Malaria-Classification-Model/Intro to R")
 
 
 # import data
@@ -178,8 +178,11 @@ calf_tests <- ideal3 |>
   
   #Plot the proportion graph
   
-  ggplot(spec_tests, aes(x = biotics, y=Proportion, fill = sensitivity)) + geom_col()
-  # ggsave("name of the map")  
+  ggplot(spec_tests, aes(x = biotics, y=Proportion, fill = sensitivity)) + geom_col() +theme_classic() + labs(title = "Sensitivity of Ecoli to drugs", 
+                                                                                             caption = "From the grapgh above, Pipercilin and Ciproflaxin vi 
+                                                                                             should be the best drug of choice to treat Ecoli") 
+  # ggsave("name of the map") 
+  ggsave("Sensitivity of Ecoli to drugs.png")
   
   
   

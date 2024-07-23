@@ -10,6 +10,8 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
+# set working directory
+# setwd("C:/Users/ADMIN/CEMA INTERNSHIP/MALARIA CLASSIFICATION MODEL - CEMA/CEMA-Malaria-Classification-Model/Intro to R"
 library(tidyverse)
 
 # import data
